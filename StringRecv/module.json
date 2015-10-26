@@ -1,11 +1,11 @@
 {
     "id": "{BCF60D64-6046-4A63-99CE-BCAF300B3286}",
     "name": "StringRecv",
-    "type": 3,
+    "type": 2,
     "vendor": "Test",
     "aliases": ["String Receiver"],
-    "parentRequirements": ["{79827379-F36E-4ADA-8A95-5F8D1DC92FA9}"],
-    "childRequirements": [],
-    "implemented": ["{018EF6B5-AB94-40C6-AA53-46943E824ACF}"],
+    "parentRequirements": ["{E310B701-4AE7-458E-B618-EC13A1A6F6A8}"],
+    "childRequirements": ["{77B31ABB-18FA-4B91-BB63-E5B2AB5588F4}"],
+    "implemented": ["{E310B701-4AE7-458E-B618-EC13A1A6F6A8}","{77B31ABB-18FA-4B91-BB63-E5B2AB5588F4}"],
     "prefix": "StrRecv"
 }

@@ -26,7 +26,7 @@ class StringRecv extends IPSModule
     public function ReceiveData($JSONString)
     {
         $data = json_decode($JSONString);
-        IPS_LogMessage('Empfang',print_r($data,1));
+        IPS_LogMessage('EmpfangParent',print_r($data,1));
         // Rohdaten müssen noch mit utf8_decode dekodiert werden.
     }
 
@@ -39,7 +39,12 @@ class StringRecv extends IPSModule
         $JSONString = json_encode($DataArray);
         IPS_SendDataToParent($this->InstanceID, $JSONString);
     }
+public function ForwardData($JSONString)
+{
+        $data = json_decode($JSONString);
+        IPS_LogMessage('EmpfangChild',print_r($data,1));
 
+}
 }
 
 ?>
